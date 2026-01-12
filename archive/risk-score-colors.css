@@ -1,0 +1,92 @@
+.risk-score-0 {
+    text-align: center;
+    background-color: #0bc902;
+}
+.risk-score-10 {
+    text-align: center;
+    background-color: #0bc902;
+}
+.risk-score-20 {
+    text-align: center;
+    background-color: #59bf00;
+}
+.risk-score-30 {
+    text-align: center;
+    background-color: #7cb400;
+}
+.risk-score-40 {
+    text-align: center;
+    background-color: #98a700;
+}
+.risk-score-50 {
+    text-align: center;
+    background-color: #b09800;
+}
+.risk-score-60 {
+    text-align: center;
+    background-color: #c68800;
+}
+.risk-score-70 {
+    text-align: center;
+    background-color: #d87500;
+}
+.risk-score-80 {
+    text-align: center;
+    background-color: #e85e00;
+}
+.risk-score-90 {
+    text-align: center;
+    background-color: #f54100;
+}
+.risk-score-100 {
+    text-align: center;
+    background-color: #ff0000;
+}
+
+.risk-pill {
+    border-radius: 25px;
+    flex-grow: 1;
+    height: 34px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.risk-pill-cell {
+    border-radius: 8px;
+    padding: 5px;
+    width: 56px;
+}
+
+.risk-text-color-0 {
+    color: #0bc902;
+}
+.risk-text-color-10 {
+    color: #0bc902;
+}
+.risk-text-color-20 {
+    color: #59bf00;
+}
+.risk-text-color-30 {
+    color: #7cb400;
+}
+.risk-text-color-40 {
+    color: #98a700;
+}
+.risk-text-color-50 {
+    color: #b09800;
+}
+.risk-text-color-60 {
+    color: #c68800;
+}
+.risk-text-color-70 {
+    color: #d87500;
+}
+.risk-text-color-80 {
+    color: #e85e00;
+}
+.risk-text-color-90 {
+    color: #f54100;
+}
+.risk-text-color-100 {
+    color: #ff0000;
+}

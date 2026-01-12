@@ -1,0 +1,704 @@
+        <div class="category">Interactive Elements</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Primary Buttons (Manage Rules)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/primary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Secondary Buttons (Filter, Clear)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #475569;"></span>
+                        <span class="token-name">smoke-600</span>
+                        <span class="hex-value">#475569</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #475569;"></span>
+                        <span class="token-name">smoke-600</span>
+                        <span class="hex-value">#475569</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/disabled</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Link Text (Manage)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/secondary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Active Navigation Item</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/secondary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Tab Navigation Active</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/secondary</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Color Analysis</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 20px;
+            background: #f8f9fa;
+            color: #1a1d29;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1570EF;
+            margin-bottom: 8px;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 32px;
+            font-size: 16px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        th {
+            background: #f8f9fa;
+            color: #374151;
+            font-weight: 600;
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+        td {
+            padding: 12px 16px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+        tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .element-name {
+            font-weight: 600;
+            color: #1a1d29;
+            min-width: 200px;
+        }
+        .color-swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 8px;
+            border: 1px solid #e5e7eb;
+            vertical-align: middle;
+        }
+        .token-name {
+            font-family: 'SF Mono', Monaco, Consolas, monospace;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #1570EF;
+            margin-right: 4px;
+        }
+        .category {
+            font-weight: 600;
+            color: #1a1d29;
+            background: #e0f2fe;
+            padding: 12px 16px;
+            margin: 32px 0 0 0;
+            border-left: 4px solid #1570EF;
+            font-size: 16px;
+        }
+        .hex-value {
+            font-family: 'SF Mono', Monaco, Consolas, monospace;
+            color: #6b7280;
+            font-size: 11px;
+            margin-left: 4px;
+        }
+        .mode-header {
+            text-align: center;
+            font-weight: 600;
+        }
+        .light-mode {
+            background: #1570EF;
+            color: white;
+        }
+        .dark-mode {
+            background: #1366D9;
+            color: white;
+        }
+        .color-cell {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .semantic-token {
+            background: #17B26A;
+            color: white;
+        }
+        .warning-token {
+            background: #FAC515;
+            color: black;
+        }
+        .error-token {
+            background: #D92D20;
+            color: white;
+        }
+        .info-token {
+            background: #FF692E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Screen Color Analysis</h1>
+        <p class="subtitle">Mapping UI elements to original design system tokens in light and dark modes</p>
+
+        <div class="category">Layout & Structure</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Main Background</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FFFFFF;"></span>
+                        <span class="token-name">white</span>
+                        <span class="hex-value">#FFFFFF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #0C111D;"></span>
+                        <span class="token-name">smoke-950</span>
+                        <span class="hex-value">#0C111D</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">bg/primary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Sidebar Background</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1D2939;"></span>
+                        <span class="token-name">smoke-800</span>
+                        <span class="hex-value">#1D2939</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1D2939;"></span>
+                        <span class="token-name">smoke-800</span>
+                        <span class="hex-value">#1D2939</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">bg/sidebar</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Card Backgrounds</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FFFFFF;"></span>
+                        <span class="token-name">white</span>
+                        <span class="hex-value">#FFFFFF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #101926;"></span>
+                        <span class="token-name">smoke-900</span>
+                        <span class="hex-value">#101926</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">bg/surface-2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Table Header Background</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #F9FAFB;"></span>
+                        <span class="token-name">smoke-25</span>
+                        <span class="hex-value">#F9FAFB</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1D2939;"></span>
+                        <span class="token-name">smoke-800</span>
+                        <span class="hex-value">#1D2939</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">bg/surface-3</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Typography</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Page Headings</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #121926;"></span>
+                        <span class="token-name">text-one</span>
+                        <span class="hex-value">#121926</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FCFCFD;"></span>
+                        <span class="token-name">smoke-25</span>
+                        <span class="hex-value">#FCFCFD</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">text/primary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Subheadings & Descriptions</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #485565;"></span>
+                        <span class="token-name">text-two</span>
+                        <span class="hex-value">#485565</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #F2F4F7;"></span>
+                        <span class="token-name">smoke-100</span>
+                        <span class="hex-value">#F2F4F7</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">text/secondary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Table Headers</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #485565;"></span>
+                        <span class="token-name">text-two</span>
+                        <span class="hex-value">#485565</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #F2F4F7;"></span>
+                        <span class="token-name">smoke-100</span>
+                        <span class="hex-value">#F2F4F7</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">text/secondary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Body Text & Numbers</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #121926;"></span>
+                        <span class="token-name">text-one</span>
+                        <span class="hex-value">#121926</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FCFCFD;"></span>
+                        <span class="token-name">smoke-25</span>
+                        <span class="hex-value">#FCFCFD</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">text/primary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Sidebar Navigation Text</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #9AA4B2;"></span>
+                        <span class="token-name">text-three</span>
+                        <span class="hex-value">#9AA4B2</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #D0D5DD;"></span>
+                        <span class="token-name">smoke-300</span>
+                        <span class="hex-value">#D0D5DD</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">text/tertiary</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Interactive Elements</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Primary Buttons (Manage Rules)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td><span class="token-name">action/primary</span></td>
+                </tr>
+                <tr>
+                    <td class="element-name">Secondary Buttons (Filter, Clear)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #475569;"></span>
+                        <span class="token-name">smoke-600</span>
+                        <span class="hex-value">#475569</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #475569;"></span>
+                        <span class="token-name">smoke-600</span>
+                        <span class="hex-value">#475569</span>
+                    </td>
+                    <td><span class="token-name">action/disabled</span></td>
+                </tr>
+                <tr>
+                    <td class="element-name">Link Text (Manage)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td><span class="token-name">action/secondary</span></td>
+                </tr>
+                <tr>
+                    <td class="element-name">Active Navigation Item</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td><span class="token-name">action/secondary</span></td>
+                </tr>
+                <tr>
+                    <td class="element-name">Tab Navigation Active</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #84CAFF;"></span>
+                        <span class="token-name">blue-300</span>
+                        <span class="hex-value">#84CAFF</span>
+                    </td>
+                    <td><span class="token-name">action/secondary</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Status & Semantic Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Tier 0 (Green Status)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #17B26A;"></span>
+                        <span class="token-name semantic-token">500</span>
+                        <span class="hex-value">#17B26A</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #17B26A;"></span>
+                        <span class="token-name semantic-token">500</span>
+                        <span class="hex-value">#17B26A</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">success/border</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Tier 1 (Orange Status)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FF692E;"></span>
+                        <span class="token-name info-token">400</span>
+                        <span class="hex-value">#FF692E</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FF692E;"></span>
+                        <span class="token-name info-token">400</span>
+                        <span class="hex-value">#FF692E</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">info/border</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Tier 2 (Blue Status)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1570EF;"></span>
+                        <span class="token-name">action</span>
+                        <span class="hex-value">#1570EF</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">action/primary</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Warning Text (Conflicts)</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FAC515;"></span>
+                        <span class="token-name warning-token">400</span>
+                        <span class="hex-value">#FAC515</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #FAC515;"></span>
+                        <span class="token-name warning-token">400</span>
+                        <span class="hex-value">#FAC515</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">warning/border</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Urgent Status</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #D92D20;"></span>
+                        <span class="token-name error-token">600</span>
+                        <span class="hex-value">#D92D20</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #D92D20;"></span>
+                        <span class="token-name error-token">600</span>
+                        <span class="hex-value">#D92D20</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">error/border</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Borders & Dividers</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>UI Element</th>
+                    <th class="mode-header light-mode">Light Mode Token</th>
+                    <th class="mode-header dark-mode">Dark Mode Token</th>
+                    <th>Semantic Token</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-name">Card Borders</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #EAECF0;"></span>
+                        <span class="token-name">smoke-200</span>
+                        <span class="hex-value">#EAECF0</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #344155;"></span>
+                        <span class="token-name">smoke-700</span>
+                        <span class="hex-value">#344155</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">border/default</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Table Cell Borders</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #F2F4F7;"></span>
+                        <span class="token-name">smoke-100</span>
+                        <span class="hex-value">#F2F4F7</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #1D2939;"></span>
+                        <span class="token-name">smoke-800</span>
+                        <span class="hex-value">#1D2939</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">border/subtle</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-name">Section Dividers</td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #EAECF0;"></span>
+                        <span class="token-name">smoke-200</span>
+                        <span class="hex-value">#EAECF0</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="color-swatch" style="background-color: #344155;"></span>
+                        <span class="token-name">smoke-700</span>
+                        <span class="hex-value">#344155</span>
+                    </td>
+                    <td class="color-cell">
+                        <span class="token-name">divider/default</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Token Mapping Summary</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Original Design System Token</th>
+                    <th>Usage Context</th>
+                    <th>Semantic Token Created</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">text-one</td>
+                    <td>Primary text in light mode</td>
+                    <td><span class="token-name">text/primary</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">text-two</td>
+                    <td>Secondary text in light mode</td>
+                    <td><span class="token-name">text/secondary</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">text-three</td>
+                    <td>Tertiary text in light mode</td>
+                    <td><span class="token-name">text/tertiary</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">action</td>
+                    <td>Primary blue for actions</td>
+                    <td><span class="token-name">action/primary</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name semantic-token">500</td>
+                    <td>Green semantic color</td>
+                    <td><span class="token-name">success/border</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name warning-token">400</td>
+                    <td>Yellow/Orange semantic color</td>
+                    <td><span class="token-name">warning/border</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name error-token">600</td>
+                    <td>Red semantic color</td>
+                    <td><span class="token-name">error/border</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">smoke-25</td>
+                    <td>Lightest smoke for backgrounds</td>
+                    <td><span class="token-name">bg/secondary</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">smoke-800</td>
+                    <td>Dark smoke for sidebar</td>
+                    <td><span class="token-name">bg/sidebar</span></td>
+                </tr>
+                <tr>
+                    <td class="token-name">smoke-950</td>
+                    <td>Darkest smoke for dark mode</td>
+                    <td><span class="token-name">bg/primary</span> (dark mode)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Design Tokens</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 20px;
+            background: #0C111D;
+            color: #FCFCFD;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #101926;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 1px solid #344155;
+        }
+        h1 {
+            color: #84CAFF;
+            margin-bottom: 8px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .subtitle {
+            color: #D0D5DD;
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        th {
+            background: #1D2939;
+            color: #F2F4F7;
+            font-weight: 600;
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid #344155;
+        }
+        td {
+            padding: 12px 16px;
+            border: 1px solid #344155;
+            vertical-align: top;
+        }
+        tr:nth-child(even) {
+            background: #1A2332;
+        }
+        .token-name {
+            font-family: 'SF Mono', Monaco, Consolas, monospace;
+            font-weight: 500;
+            color: #FCFCFD;
+        }
+        .color-swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 8px;
+            border: 1px solid #475569;
+            vertical-align: middle;
+        }
+        .hex-value {
+            font-family: 'SF Mono', Monaco, Consolas, monospace;
+            color: #D0D5DD;
+            font-size: 12px;
+        }
+        .reference {
+            font-family: 'SF Mono', Monaco, Consolas, monospace;
+            background: #344155;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #84CAFF;
+        }
+        .category {
+            font-weight: 600;
+            color: #FCFCFD;
+            background: #1D2939;
+            padding: 8px 16px;
+            margin: 24px 0 0 0;
+            border-left: 4px solid #1570EF;
+        }
+        .description {
+            color: #D0D5DD;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dark Mode Design Tokens</h1>
+        <p class="subtitle">Complete reference for Sentinel Design System dark mode color tokens</p>
+
+        <div class="category">Background Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Color</th>
+                    <th>Hex Value</th>
+                    <th>References</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">bg/primary</td>
+                    <td><span class="color-swatch" style="background-color: #0C111D;"></span></td>
+                    <td class="hex-value">#0C111D</td>
+                    <td><span class="reference">smoke-950</span></td>
+                    <td class="description">Primary background color - darkest level</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/secondary</td>
+                    <td><span class="color-swatch" style="background-color: #101926;"></span></td>
+                    <td class="hex-value">#101926</td>
+                    <td><span class="reference">smoke-900</span></td>
+                    <td class="description">Secondary background color - slightly lighter</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/sidebar</td>
+                    <td><span class="color-swatch" style="background-color: #1D2939;"></span></td>
+                    <td class="hex-value">#1D2939</td>
+                    <td><span class="reference">smoke-800</span></td>
+                    <td class="description">Sidebar background color - maintains current dark theme</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/surface-1</td>
+                    <td><span class="color-swatch" style="background-color: #101926;"></span></td>
+                    <td class="hex-value">#101926</td>
+                    <td><span class="reference">smoke-900</span></td>
+                    <td class="description">Base surface elevation (shadow-xs)</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/surface-2</td>
+                    <td><span class="color-swatch" style="background-color: #1D2939;"></span></td>
+                    <td class="hex-value">#1D2939</td>
+                    <td><span class="reference">smoke-800</span></td>
+                    <td class="description">Elevated surface (shadow-sm, shadow-md)</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/surface-3</td>
+                    <td><span class="color-swatch" style="background-color: #344155;"></span></td>
+                    <td class="hex-value">#344155</td>
+                    <td><span class="reference">smoke-700</span></td>
+                    <td class="description">Higher elevation (shadow-lg, shadow-xl)</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/surface-4</td>
+                    <td><span class="color-swatch" style="background-color: #475569;"></span></td>
+                    <td class="hex-value">#475569</td>
+                    <td><span class="reference">smoke-600</span></td>
+                    <td class="description">Floating elements (shadow-2xl)</td>
+                </tr>
+                <tr>
+                    <td class="token-name">bg/surface-5</td>
+                    <td><span class="color-swatch" style="background-color: #667085;"></span></td>
+                    <td class="hex-value">#667085</td>
+                    <td><span class="reference">smoke-500</span></td>
+                    <td class="description">Highest elevation (shadow-3xl)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Text Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Color</th>
+                    <th>Hex Value</th>
+                    <th>References</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">text/primary</td>
+                    <td><span class="color-swatch" style="background-color: #FCFCFD;"></span></td>
+                    <td class="hex-value">#FCFCFD</td>
+                    <td><span class="reference">smoke-25</span></td>
+                    <td class="description">Primary text - highest contrast for headers/important text</td>
+                </tr>
+                <tr>
+                    <td class="token-name">text/secondary</td>
+                    <td><span class="color-swatch" style="background-color: #F2F4F7;"></span></td>
+                    <td class="hex-value">#F2F4F7</td>
+                    <td><span class="reference">smoke-100</span></td>
+                    <td class="description">Secondary text - body text, secondary information</td>
+                </tr>
+                <tr>
+                    <td class="token-name">text/tertiary</td>
+                    <td><span class="color-swatch" style="background-color: #D0D5DD;"></span></td>
+                    <td class="hex-value">#D0D5DD</td>
+                    <td><span class="reference">smoke-300</span></td>
+                    <td class="description">Tertiary text - captions, placeholders</td>
+                </tr>
+                <tr>
+                    <td class="token-name">text/disabled</td>
+                    <td><span class="color-swatch" style="background-color: #667085;"></span></td>
+                    <td class="hex-value">#667085</td>
+                    <td><span class="reference">smoke-500</span></td>
+                    <td class="description">Disabled text - disabled states, very low priority</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Action Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Color</th>
+                    <th>Hex Value</th>
+                    <th>References</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">action/primary</td>
+                    <td><span class="color-swatch" style="background-color: #1570EF;"></span></td>
+                    <td class="hex-value">#1570EF</td>
+                    <td><span class="reference">action</span></td>
+                    <td class="description">Primary action color - works on both light/dark</td>
+                </tr>
+                <tr>
+                    <td class="token-name">action/primary-hover</td>
+                    <td><span class="color-swatch" style="background-color: #1366D9;"></span></td>
+                    <td class="hex-value">#1366D9</td>
+                    <td><span class="reference">blue-600</span></td>
+                    <td class="description">Primary action hover state</td>
+                </tr>
+                <tr>
+                    <td class="token-name">action/primary-pressed</td>
+                    <td><span class="color-swatch" style="background-color: #175CD3;"></span></td>
+                    <td class="hex-value">#175CD3</td>
+                    <td><span class="reference">blue-700</span></td>
+                    <td class="description">Primary action pressed state</td>
+                </tr>
+                <tr>
+                    <td class="token-name">action/secondary</td>
+                    <td><span class="color-swatch" style="background-color: #84CAFF;"></span></td>
+                    <td class="hex-value">#84CAFF</td>
+                    <td><span class="reference">blue-300</span></td>
+                    <td class="description">Secondary action text - lighter blue for dark backgrounds</td>
+                </tr>
+                <tr>
+                    <td class="token-name">action/border</td>
+                    <td><span class="color-swatch" style="background-color: #1366D9;"></span></td>
+                    <td class="hex-value">#1366D9</td>
+                    <td><span class="reference">blue-600</span></td>
+                    <td class="description">Action border color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">action/disabled</td>
+                    <td><span class="color-swatch" style="background-color: #475569;"></span></td>
+                    <td class="hex-value">#475569</td>
+                    <td><span class="reference">smoke-600</span></td>
+                    <td class="description">Disabled action state</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Border & Divider Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Color</th>
+                    <th>Hex Value</th>
+                    <th>References</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">border/subtle</td>
+                    <td><span class="color-swatch" style="background-color: #1D2939;"></span></td>
+                    <td class="hex-value">#1D2939</td>
+                    <td><span class="reference">smoke-800</span></td>
+                    <td class="description">Subtle borders - minimal contrast for clean separation</td>
+                </tr>
+                <tr>
+                    <td class="token-name">border/default</td>
+                    <td><span class="color-swatch" style="background-color: #344155;"></span></td>
+                    <td class="hex-value">#344155</td>
+                    <td><span class="reference">smoke-700</span></td>
+                    <td class="description">Default borders - standard border contrast</td>
+                </tr>
+                <tr>
+                    <td class="token-name">border/strong</td>
+                    <td><span class="color-swatch" style="background-color: #475569;"></span></td>
+                    <td class="hex-value">#475569</td>
+                    <td><span class="reference">smoke-600</span></td>
+                    <td class="description">Strong borders - emphasized borders</td>
+                </tr>
+                <tr>
+                    <td class="token-name">border/focus</td>
+                    <td><span class="color-swatch" style="background-color: #1570EF;"></span></td>
+                    <td class="hex-value">#1570EF</td>
+                    <td><span class="reference">action</span></td>
+                    <td class="description">Focus borders - brand consistency</td>
+                </tr>
+                <tr>
+                    <td class="token-name">divider/light</td>
+                    <td><span class="color-swatch" style="background-color: #1D2939;"></span></td>
+                    <td class="hex-value">#1D2939</td>
+                    <td><span class="reference">smoke-800</span></td>
+                    <td class="description">Light dividers - subtle section separation</td>
+                </tr>
+                <tr>
+                    <td class="token-name">divider/default</td>
+                    <td><span class="color-swatch" style="background-color: #344155;"></span></td>
+                    <td class="hex-value">#344155</td>
+                    <td><span class="reference">smoke-700</span></td>
+                    <td class="description">Standard dividers - clear content separation</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category">Semantic Colors</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token Name</th>
+                    <th>Color</th>
+                    <th>Hex Value</th>
+                    <th>References</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="token-name">success/bg</td>
+                    <td><span class="color-swatch" style="background-color: #05140A;"></span></td>
+                    <td class="hex-value">#05140A</td>
+                    <td><span class="reference">green-950</span></td>
+                    <td class="description">Success background color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">success/text</td>
+                    <td><span class="color-swatch" style="background-color: #6CE9A6;"></span></td>
+                    <td class="hex-value">#6CE9A6</td>
+                    <td><span class="reference">green-300</span></td>
+                    <td class="description">Success text color - lighter for readability</td>
+                </tr>
+                <tr>
+                    <td class="token-name">success/border</td>
+                    <td><span class="color-swatch" style="background-color: #17B26A;"></span></td>
+                    <td class="hex-value">#17B26A</td>
+                    <td><span class="reference">500</span></td>
+                    <td class="description">Success border color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">success/icon</td>
+                    <td><span class="color-swatch" style="background-color: #17B26A;"></span></td>
+                    <td class="hex-value">#17B26A</td>
+                    <td><span class="reference">500</span></td>
+                    <td class="description">Success icon color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">warning/bg</td>
+                    <td><span class="color-swatch" style="background-color: #1F1A00;"></span></td>
+                    <td class="hex-value">#1F1A00</td>
+                    <td><span class="reference">yellow-950</span></td>
+                    <td class="description">Warning background color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">warning/text</td>
+                    <td><span class="color-swatch" style="background-color: #FEF08A;"></span></td>
+                    <td class="hex-value">#FEF08A</td>
+                    <td><span class="reference">yellow-200</span></td>
+                    <td class="description">Warning text color - lighter for readability</td>
+                </tr>
+                <tr>
+                    <td class="token-name">warning/border</td>
+                    <td><span class="color-swatch" style="background-color: #FAC515;"></span></td>
+                    <td class="hex-value">#FAC515</td>
+                    <td><span class="reference">400</span></td>
+                    <td class="description">Warning border color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">warning/icon</td>
+                    <td><span class="color-swatch" style="background-color: #FAC515;"></span></td>
+                    <td class="hex-value">#FAC515</td>
+                    <td><span class="reference">400</span></td>
+                    <td class="description">Warning icon color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">error/bg</td>
+                    <td><span class="color-swatch" style="background-color: #1A0A0A;"></span></td>
+                    <td class="hex-value">#1A0A0A</td>
+                    <td><span class="reference">red-950</span></td>
+                    <td class="description">Error background color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">error/text</td>
+                    <td><span class="color-swatch" style="background-color: #FDA29B;"></span></td>
+                    <td class="hex-value">#FDA29B</td>
+                    <td><span class="reference">red-300</span></td>
+                    <td class="description">Error text color - lighter for readability</td>
+                </tr>
+                <tr>
+                    <td class="token-name">error/border</td>
+                    <td><span class="color-swatch" style="background-color: #D92D20;"></span></td>
+                    <td class="hex-value">#D92D20</td>
+                    <td><span class="reference">600</span></td>
+                    <td class="description">Error border color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">error/icon</td>
+                    <td><span class="color-swatch" style="background-color: #F04438;"></span></td>
+                    <td class="hex-value">#F04438</td>
+                    <td><span class="reference">red-500</span></td>
+                    <td class="description">Error icon color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">info/bg</td>
+                    <td><span class="color-swatch" style="background-color: #1F0C00;"></span></td>
+                    <td class="hex-value">#1F0C00</td>
+                    <td><span class="reference">orange-950</span></td>
+                    <td class="description">Info background color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">info/text</td>
+                    <td><span class="color-swatch" style="background-color: #FECDCA;"></span></td>
+                    <td class="hex-value">#FECDCA</td>
+                    <td><span class="reference">orange-200</span></td>
+                    <td class="description">Info text color - lighter for readability</td>
+                </tr>
+                <tr>
+                    <td class="token-name">info/border</td>
+                    <td><span class="color-swatch" style="background-color: #FF692E;"></span></td>
+                    <td class="hex-value">#FF692E</td>
+                    <td><span class="reference">400</span></td>
+                    <td class="description">Info border color</td>
+                </tr>
+                <tr>
+                    <td class="token-name">info/icon</td>
+                    <td><span class="color-swatch" style="background-color: #FF692E;"></span></td>
+                    <td class="hex-value">#FF692E</td>
+                    <td><span class="reference">400</span></td>
+                    <td class="description">Info icon color</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

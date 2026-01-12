@@ -1,0 +1,226 @@
+/**
+ * Sentinel Design System - Color Tokens
+ * 
+ * Auto-generated from base-styles.json and sentinel-ds-colors-mapped.json
+ * Generated at: 2026-01-12T22:15:23.795073Z
+ * 
+ * Usage in Vue:
+ * 
+ * <style>
+ * @import './sentinel-ds-colors.css';
+ * 
+ * .card {
+ *   background-color: var(--bg-surface-card);
+ *   color: var(--text-primary);
+ * }
+ * </style>
+ * 
+ * Toggle themes:
+ * document.documentElement.setAttribute('data-theme', 'dark');
+ */
+
+:root {
+  /* Light theme (default) */
+  --bg-surface-primary: #F8FAFCFF;
+  --bg-surface-secondary: #FCFCFDFF;
+  --bg-surface-sidebar: #111928FF;
+  --bg-surface-card: #FFFFFFFF;
+  --bg-surface-card-selected: #FAFCFFFF;
+  --bg-surface-border: #DDE6F1FF;
+  --bg-surface-cell: #FFFFFFFF;
+  --bg-surface-cell-hover: #EFF8FFFF;
+  --bg-surface-header: #F8FAFCFF;
+  --bg-surface-header-hover: #EEF2F6FF;
+  --bg-surface-table-container: #FFFFFFFF;
+  --bg-surface-total-cell: #EEF2F6FF;
+  --bg-surface-button-nav: #EEF2F6FF;
+  --bg-surface-button-nav-border: #DDE6F1FF;
+  --bg-surface-filter-bg: #FFFFFFFF;
+  --bg-surface-filter-group: #FCFCFDFF;
+  --text-primary: #121926FF;
+  --text-secondary: #4B5565FF;
+  --text-tertiary: #9AA4B2FF;
+  --text-disabled: #CDD5DFFF;
+  --text-table-data: #4B5565FF;
+  --text-body-text: #4B5565FF;
+  --color: #FFFFFFFF;
+  --action-buttons-button-primary: #1570EFFF;
+  --action-buttons-button-primary-hover: #175CD3FF;
+  --action-buttons-button-primary-pressed: #175CD3FF;
+  --action-buttons-button-secondary: #FFFFFFFF;
+  --action-buttons-button-secondary-hover: #FAFCFFFF;
+  --action-buttons-button-secondary-text: #4B5565FF;
+  --action-buttons-button-disabled: #F8FAFCFF;
+  --action-buttons-button-disabled-text: #CDD5DFFF;
+  --action-buttons-tab-nav-selected: #1570EFFF;
+  --action-buttons-tab-nav-unselected: #9AA4B2FF;
+  --action-checkbox-checkbox-selected: #1570EFFF;
+  --action-checkbox-checkbox-selected-border: #1570EFFF;
+  --action-checkbox-checkbox-unselected: #FFFFFFFF;
+  --action-checkbox-checkbox-unselected-border: #DDE6F1FF;
+  --action-checkbox-checkbox-disabled: #F8FAFCFF;
+  --action-checkbox-checkbox-disabled-border: #DDE6F1FF;
+  --action-radio-radio-unselected: #FFFFFFFF;
+  --action-radio-radio-unselected-border: #DDE6F1FF;
+  --action-radio-radio-selected: #FFFFFFFF;
+  --action-radio-radio-selected-border: #1570EFFF;
+  --action-radio-radio-disabled: #F8FAFCFF;
+  --action-radio-radio-disabled-border: #DDE6F1FF;
+  --action-bulk-edit-bulk-edit-bg: #EEF4FFFF;
+  --action-bulk-edit-bulk-edit-border: #C7D7FEFF;
+  --alerts-info-bg: #EFF8FFFF;
+  --alerts-info-title: #3538CDFF;
+  --alerts-info-border: #53B1FDFF;
+  --alerts-info-icon+text: #2E90FAFF;
+  --alerts-error-bg: #FFFBFAFF;
+  --alerts-error-title: #B42318FF;
+  --alerts-error-border: #D92D20FF;
+  --alerts-error-icon+text: #F04438FF;
+  --alerts-warning-bg: #FEFDF0FF;
+  --alerts-warning-Title: #A15C07FF;
+  --alerts-warning-border: #CA8504FF;
+  --alerts-warning-icon+text: #CA8504FF;
+  --alerts-success-bg: #F6FEF9FF;
+  --alerts-success-title: #067647FF;
+  --alerts-success-border: #17B26AFF;
+  --alerts-success-icon+text: #17B26AFF;
+  --divider-default: #B5C9E1FF;
+  --border-default: #DDE6F1FF;
+  --border-focus: #1570EFFF;
+  --form-dropdown-dropdown-enabled: #FFFFFFFF;
+  --form-dropdown-dropdown-enabled-border: #DDE6F1FF;
+  --form-dropdown-dropdown-disabled: #F7F7F7FF;
+  --form-dropdown-dropdown-disabled-border: #DDE6F1FF;
+  --form-dropdown-dropdown-disabled-text: #CDD5DFFF;
+  --form-text-area-text-area-enabled: #FFFFFFFF;
+  --form-text-area-text-area-enabled-border: #DDE6F1FF;
+  --form-text-area-text-area-disabled: #F7F7F7FF;
+  --form-text-area-text-area-disabled-border: #DDE6F1FF;
+  --form-text-area-text-area-disabled-text: #CDD5DFFF;
+  --form-input-input-enabled: #FFFFFFFF;
+  --form-input-input-enabled-border: #DDE6F1FF;
+  --form-input-input-disabled: #F8FAFCFF;
+  --form-input-input-disabled-border: #DDE6F1FF;
+  --form-input-input-disbled-text: #CDD5DFFF;
+  --form-input-input-placeholder-text: #9AA4B2FF;
+  --form-input-input-text-active: #4B5565FF;
+  --badge-badge-grey: #E3E8EFFF;
+  --badge-badge-grey-text: #4B5565FF;
+  --badge-badge-red: #FEE4E2FF;
+  --badge-badge-red-text: #D92D20FF;
+  --badge-badge-yellow: #FEF7C3FF;
+  --badge-badge-yellow-text: #CA8504FF;
+  --badge-badge-green: #DCFAE6FF;
+  --badge-badge-green-text: #079455FF;
+  --badge-badge-blue: #E0EAFFFF;
+  --badge-badge-blue-text: #3538CDFF;
+  --badge-badge-purple: #EBE9FEFF;
+  --badge-badge-purple-text: #4A1FB8FF;
+  --badge-badge-pink: #FFF1F3FF;
+  --badge-badge-pink-text: #C01048FF;
+  --badge-badge-orange: #FFE6D5FF;
+  --badge-badge-orange-text: #F25D06FF;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --bg-surface-primary: #0D121CFF;
+  --bg-surface-secondary: #121926FF;
+  --bg-surface-sidebar: #0D121CFF;
+  --bg-surface-card: #364152FF;
+  --bg-surface-card-selected: #4B5565FF;
+  --bg-surface-border: #697586FF;
+  --bg-surface-cell: #202939FF;
+  --bg-surface-cell-hover: #2C3646FF;
+  --bg-surface-header: #121926FF;
+  --bg-surface-header-hover: #202939FF;
+  --bg-surface-table-container: #0D121CFF;
+  --bg-surface-total-cell: #121926FF;
+  --bg-surface-button-nav: #2C3646FF;
+  --bg-surface-button-nav-border: #202939FF;
+  --bg-surface-filter-bg: #121926FF;
+  --bg-surface-filter-group: #202939FF;
+  --text-primary: #CDD5DFFF;
+  --text-secondary: #9AA4B2FF;
+  --text-tertiary: #4B5565FF;
+  --text-disabled: #697586FF;
+  --text-table-data: #CDD5DFFF;
+  --text-body-text: #CDD5DFFF;
+  --color: #FFFFFFFF;
+  --action-buttons-button-primary: #1570EFFF;
+  --action-buttons-button-primary-hover: #175CD3FF;
+  --action-buttons-button-primary-pressed: #175CD3FF;
+  --action-buttons-button-secondary: #4B5565FF;
+  --action-buttons-button-secondary-hover: #364152FF;
+  --action-buttons-button-secondary-text: #9AA4B2FF;
+  --action-buttons-button-disabled: #364152FF;
+  --action-buttons-button-disabled-text: #9AA4B2FF;
+  --action-buttons-tab-nav-selected: #1570EFFF;
+  --action-buttons-tab-nav-unselected: #9AA4B2FF;
+  --action-checkbox-checkbox-selected: #1570EFFF;
+  --action-checkbox-checkbox-selected-border: #1570EFFF;
+  --action-checkbox-checkbox-unselected: #9AA4B2FF;
+  --action-checkbox-checkbox-unselected-border: #364152FF;
+  --action-checkbox-checkbox-disabled: #4B5565FF;
+  --action-checkbox-checkbox-disabled-border: #364152FF;
+  --action-radio-radio-unselected: #9AA4B2FF;
+  --action-radio-radio-unselected-border: #364152FF;
+  --action-radio-radio-selected: #9AA4B2FF;
+  --action-radio-radio-selected-border: #1570EFFF;
+  --action-radio-radio-disabled: #9AA4B2FF;
+  --action-radio-radio-disabled-border: #364152FF;
+  --action-bulk-edit-bulk-edit-bg: #202939FF;
+  --action-bulk-edit-bulk-edit-border: #2C3646FF;
+  --alerts-info-bg: #2B2F73FF;
+  --alerts-info-title: #84CAFFFF;
+  --alerts-info-border: #175CD3FF;
+  --alerts-info-icon+text: #1849A9FF;
+  --alerts-error-bg: #FFFBFAFF;
+  --alerts-error-title: #B42318FF;
+  --alerts-error-border: #D92D20FF;
+  --alerts-error-icon+text: #F04438FF;
+  --alerts-warning-bg: #713B12FF;
+  --alerts-warning-Title: #EAAA08FF;
+  --alerts-warning-border: #CA8504FF;
+  --alerts-warning-icon+text: #FAC515FF;
+  --alerts-success-bg: #F6FEF9FF;
+  --alerts-success-title: #067647FF;
+  --alerts-success-border: #17B26AFF;
+  --alerts-success-icon+text: #17B26AFF;
+  --divider-default: #2C3646FF;
+  --border-default: #364152FF;
+  --border-focus: #1570EFFF;
+  --form-dropdown-dropdown-enabled: #4B5565FF;
+  --form-dropdown-dropdown-enabled-border: #364152FF;
+  --form-dropdown-dropdown-disabled: #202939FF;
+  --form-dropdown-dropdown-disabled-border: #364152FF;
+  --form-dropdown-dropdown-disabled-text: #4B5565FF;
+  --form-text-area-text-area-enabled: #4B5565FF;
+  --form-text-area-text-area-enabled-border: #364152FF;
+  --form-text-area-text-area-disabled: #202939FF;
+  --form-text-area-text-area-disabled-border: #364152FF;
+  --form-text-area-text-area-disabled-text: #4B5565FF;
+  --form-input-input-enabled: #4B5565FF;
+  --form-input-input-enabled-border: #364152FF;
+  --form-input-input-disabled: #202939FF;
+  --form-input-input-disabled-border: #364152FF;
+  --form-input-input-disbled-text: #4B5565FF;
+  --form-input-input-placeholder-text: #9AA4B2FF;
+  --form-input-input-text-active: #CDD5DFFF;
+  --badge-badge-grey: #4B5565FF;
+  --badge-badge-grey-text: #CDD5DFFF;
+  --badge-badge-red: #7A271AFF;
+  --badge-badge-red-text: #FDA29BFF;
+  --badge-badge-yellow: #713B12FF;
+  --badge-badge-yellow-text: #FAC515FF;
+  --badge-badge-green: #085D3AFF;
+  --badge-badge-green-text: #ABEFC6FF;
+  --badge-badge-blue: #2B2F73FF;
+  --badge-badge-blue-text: #84CAFFFF;
+  --badge-badge-purple: #3E1C96FF;
+  --badge-badge-purple-text: #9B8AFBFF;
+  --badge-badge-pink: #851651FF;
+  --badge-badge-pink-text: #F670C7FF;
+  --badge-badge-orange: #A63603FF;
+  --badge-badge-orange-text: #FD974EFF;
+}
